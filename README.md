@@ -1,6 +1,6 @@
-### ReactJS Application Template with Grunt/NPM/Bootstrap/Backbone Setup
+### ReactJS Application Template with Grunt/NPM/Bootstrap/Browserify/Backbone
 
-This application template uses Bootstrap for CSS, Bootstrap for routes, and Browserify to build React components as CommonJS modules.
+This application template uses Bootstrap for CSS, Backbone for routes, and Browserify to build React components as CommonJS modules.
 
 #### Install required node modules:
 
@@ -13,7 +13,8 @@ This application template uses Bootstrap for CSS, Bootstrap for routes, and Brow
 The default Grunt task will build everything in your `/src` folder starting with `/src/main.js` as the entry point.
 
 It will then run a simple static http server so you can browse using `http://localhost:3000`.
-Finally it will watch for any file changes in the `src` folder and rebuild:
+
+Finally it will watch for any file changes in the `src` folder and rebuild.
 
 There are two other individual Grunt tasks:
 
@@ -52,3 +53,7 @@ Here are a few tips when working with JSX:
 - Use the `className` attribute and not `class` for defining CSS on elements. This is because `class` is a reserved JavaScript keyword, and JSX gets converted to real JavaScript.
 - You must always use an object with key value pairs for setting the `style` attribute. Do this via the binding syntax `style={this.someFunctionToGetStyle()}` or `style={someObjectInScope}`
 - To render child components, use the `{this.props.children}` expression within the area of your component you wish to render children into. Any children you declare inside an instance of your component will not render if you don't do this.
+
+#### IDE Support
+
+IDE editors with strong code object models and inspections (such as WebStorm, Visual Studio) have as of yet limited JSX support. Therefore I recommend using Sublime to get a good build development experience with JSX.
